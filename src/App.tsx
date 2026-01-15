@@ -144,6 +144,10 @@ function AppContent({ document, roomId }: { document: LogicDocument; roomId: str
         <Canvas document={document} />
       </div>
 
+      <footer className="app__footer">
+        Made with ❤️ (and a lot of diagrams) because Pratik needs visual aids to understand things. We're not judging - some people are just wired differently. If you can't explain it with a diagram, is it even real? 🤷‍♂️
+      </footer>
+
       <ToastContainer toasts={toasts} onClose={removeToast} />
 
       <ConfirmDialog
