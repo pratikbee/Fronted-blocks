@@ -130,8 +130,8 @@ export function Canvas({ document }: CanvasProps) {
   }, []);
 
   return (
-    <div style={{ width: '100%', height: '100vh', display: 'flex' }}>
-      <div style={{ flex: 1, position: 'relative' }}>
+    <div style={{ width: '100%', height: '100%', display: 'flex' }}>
+      <div style={{ flex: 1, position: 'relative', height: '100%' }}>
         <ReactFlow
           nodes={nodes}
           edges={edges}
