@@ -1,0 +1,134 @@
+.block-node {
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 12px;
+  min-width: 150px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
+}
+
+.block-node:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.block-node--error {
+  border-color: #f44336;
+  background: #ffebee;
+}
+
+.block-node--invalid {
+  border-color: #ff9800;
+  background: #fff3e0;
+}
+
+.block-node--trigger {
+  border-color: #4caf50;
+}
+
+.block-node--action {
+  border-color: #2196f3;
+}
+
+.block-node--condition {
+  border-color: #ff9800;
+}
+
+.block-node--transform {
+  border-color: #9c27b0;
+}
+
+.block-node--variable {
+  border-color: #607d8b;
+}
+
+.block-node__header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.block-node__type {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #666;
+  font-weight: 600;
+}
+
+.block-node__label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.block-node__content {
+  font-size: 12px;
+  color: #666;
+}
+
+.block-node__data {
+  font-family: monospace;
+  font-size: 10px;
+  background: #f5f5f5;
+  padding: 4px;
+  border-radius: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.block-node__action-name,
+.block-node__event-name,
+.block-node__variable-name {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 4px;
+  font-size: 13px;
+}
+
+.block-node__message {
+  color: #666;
+  font-size: 12px;
+  margin-top: 4px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-height: 60px;
+  overflow: hidden;
+}
+
+.block-node__condition {
+  font-size: 12px;
+  color: #666;
+  font-style: italic;
+}
+
+.block-node__placeholder {
+  font-size: 11px;
+  color: #999;
+  font-style: italic;
+  text-align: center;
+  padding: 8px 0;
+}
+
+.block-node__handle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background: #2196f3;
+}
+
+.block-node__handle--input {
+  background: #4caf50;
+}
+
+.block-node__handle--output {
+  background: #2196f3;
+}
+
+.block-node__handle:hover {
+  width: 12px;
+  height: 12px;
+}
